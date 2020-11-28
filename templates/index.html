@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}{% endblock %}</title>
     <!-- Bootstrap -->
-    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 	<link href="{{ url_for('static', filename='css/bootstrap-4.4.1.css') }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,8 +27,8 @@
                 <div class="card-body">
                    <h5 class="card-title">{{ ideatext }} Idea Text</h5>
                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                   <p class="card-text">Some descriptive text providing extra details about the idea generated.</p>
-                   <a href="#" class="card-link">Idea Permalink</a>
+                   <p class="card-text">{{ description }} Some descriptive text providing extra details about the idea generated.</p>
+                   <a href="#" class="card-link">{{ link }} Idea Permalink</a>
                 </div>
              </div>
              <br/>
@@ -39,7 +39,7 @@
        <div class="row">
           <div class="text-center col-lg-6 offset-lg-3">
              <h4>Footer </h4>
-             <p>Copyright &copy; 2020 &middot; All Rights Reserved &middot; <a href="#" >My Website</a></p>
+             <p>Copyright &copy; 2020 &middot; All Rights Reserved &middot; <a href="#" >Website Name</a></p>
           </div>
        </div>
     </div>
